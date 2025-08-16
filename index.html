@@ -5,69 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>X3 Padel Center</title>
     <!--vinculación con css-->
-    <link rel="stylesheet" href="./estilos/style.css">
+    <!-- 1. Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 2. hoja de estilos personalizada -->
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
+    <!-- Contenedor principal que usa Grid para la maquetación de la página -->
     <div class="grilla">
     <header>
 
+        <!-- Menú de navegación principal -->
         <nav>
             <ul class="menu">
                 <li><a href="#" >Inicio </a></li>
                 <li><a href="./html_distintos/store.html">Store</a></li>
                 <li><a href="./html_distintos/turnos.html">Reservar un turno</a></li>
-                <li><a href="./html_distintos/torneos.html">Ver torneos</a></li>
+                <li><a href="./html_distintos/turnos.html">Ver torneos</a></li>
                 <li><a href="./html_distintos/socios.html">Acceder</a></li>
             </ul>
         </nav>
         
     </header>
+    <!-- Contenido principal de la página -->
     <main class="titulos">
 
+        <!-- Links principales con imágenes y texto superpuesto -->
+        <div class="botones_con_logo">
+            <a href="./html_distintos/store.html" class="logo-link">
+                <img src="./multimedia/imagenes/carrito_icono.jpeg" alt="Store" class="img-fluid">
+                <!-- El texto se posiciona de forma absoluta sobre la imagen gracias a Bootstrap y CSS -->
+                <div class="position-absolute top-50 start-50 translate-middle text-white">
+                        <h2>Store</h2>
+                </div>
+            </a>
+            <a href="./html_distintos/turnos.html" class="logo-link">
+                <img src="./multimedia/imagenes/pelota_icono.jpg" alt="Turnos y Torneos" class="img-fluid">
+                <div class="position-absolute top-50 start-50 translate-middle text-white">
+                        <h2>Turnos y Torneos</h2>
+                </div>
+            </a>
+            <a href="./html_distintos/socios.html" class="logo-link">
+                <img src="./multimedia/imagenes/socio_icono.jpeg" alt="Socios" class="img-fluid">
+                <div class="position-absolute top-50 start-50 translate-middle text-white">
+                        <h2>Acceder</h2>
+                </div>
+            </a>
+
+        </div>
+        <!-- Espacios en blanco para separar secciones -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <!-- seccion de inicio con foto-->
-       
-        <!-- seccion noticias y novedades-->
+
+        <!-- Título para la sección de novedades -->
+        <h1>¿Ya viste las ultimas novedades?</h1>
+        <br>
+        <br>
+        <br>
+        <!-- Carrusel de imágenes de Bootstrap -->
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="./multimedia/imagenes/paletassss.jpeg" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                <img src="./multimedia/imagenes/Tero Padel Club, Waterloo.jpeg" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                <img src="./multimedia/imagenes/buzomuj.jpeg" class="d-block w-100" alt="Imagen 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+            </div>
+
+        <!-- Título para la sección de videos -->
         <h2>Noticias y Novedades</h2>
-        <section class="novedades-noticias">
-
-            <!-- noticia 1-->
-            <div>
-                <video src="./multimedia/videos/video1.mp4"controls></video>
+        <!-- Carrusel de videos, usando la estructura de Bootstrap -->
+        <section class="container my-5 video-carousel-wrapper">
+            <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <video class="d-block w-100" src="./multimedia/videos/video1.mp4" controls muted loop></video>
+                    </div>
+                    <div class="carousel-item">
+                        <video class="d-block w-100" src="./multimedia/videos/video2.mp4" controls muted loop></video>
+                    </div>
+                    <div class="carousel-item">
+                        <video class="d-block w-100" src="./multimedia/videos/video3.mp4" controls muted loop></video>
+                    </div>
+                    <div class="carousel-item">
+                        <video class="d-block w-100" src="./multimedia/videos/video4.mp4" controls muted loop></video>
+                    </div>
+                    <div class="carousel-item">
+                        <video class="d-block w-100" src="./multimedia/videos/video5.mp4" controls muted loop></video>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <!--noticia 2-->
-            <div>
-                <video src="./multimedia/videos/video2.mp4"controls></video>
-            </div>
-            <!--noticia 3-->
-            <div>
-                <video src="./multimedia/videos/video3.mp4" controls></video>
-            </div>
-            <!-- noticia 4-->
-             <div>
-                <video src="./multimedia/videos/video4.mp4" controls></video>
-            </div>
-            <!--noticia 5-->
-            <div>
-                <video src="./multimedia/videos/video5.mp4" controls></video>
-            </div>
-
-        </section>
-        <!--seccion de videos y fotos de la ultima semana-->
-        <section>
-
-            <h2>Fotos y Videos</h2>
-            <!--foto 1-->
-            <div>
-                <video src=""></video>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi in itaque ratione. Sint laboriosam nostrum blanditiis eveniet exercitationem optio quae cumque quia aspernatur recusandae, modi in consectetur, veritatis iste eius!</p>
-            </div>
-
         </section>
 
 
     </main>
+    <!-- Pie de página con información de contacto y ubicación -->
     <footer class="pie-pag">
-        <!-- pie de página-->
         <h2>Contacto
             <ul>
                 <li>@x3padelcenter</li>
@@ -81,5 +139,10 @@
         </h2>
     </footer>
     </div>
+    <!-- Scripts de Bootstrap, se ponen al final para que la página cargue más rápido -->
+    <script 
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
 </body>
 </html>
