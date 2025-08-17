@@ -16,7 +16,7 @@
     <header>
 
         <!-- Menú de navegación principal -->
-        <nav>
+        <nav class="nav-desktop">
             <ul class="menu">
                 <li><a href="#" >Inicio </a></li>
                 <li><a href="./html_distintos/store.html">Store</a></li>
@@ -24,6 +24,30 @@
                 <li><a href="./html_distintos/turnos.html">Ver torneos</a></li>
                 <li><a href="./html_distintos/socios.html">Acceder</a></li>
             </ul>
+        </nav>
+        <!-- menu para moviles-->
+        <nav class="nav-mobile navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="../index.html"><img src="../multimedia/imagenes/x3-fondonegro.jpg" alt="Logo X3 Padel Center"></a>
+
+                <!-- Botón hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú -->
+                <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./store.html">Store</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./turnos.html">Reservar un turno</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./turnos.html">Ver torneos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./socios.html">Acceder</a></li>
+                </ul>
+                </div>
+            </div>
         </nav>
         
     </header>
