@@ -130,10 +130,11 @@ body{
     text-align: center;
     display: flex;
     background-size: contain;
-    gap: 20px;
+    gap: 30px;
     background-position: center;
     background-color: black;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     
 }
 /* Convierto los links en anclas relativas para poder posicionar el texto encima */
@@ -148,6 +149,7 @@ body{
     width: 150px;
     height: 150px;
     object-fit: cover; /* Asegura que la imagen llene el círculo sin deformarse */
+
 }
 
 /* Clase para posicionar texto sobre las imágenes de los links (reemplaza a Bootstrap) */
@@ -327,4 +329,25 @@ h1{
   .header-logo-grande, 
   header.header-con-fondo{ background-image:none; }
 }
+
+.card-menu {
+  display: flex;
+  flex-direction: column; /* imagen arriba, texto abajo */
+  align-items: center;    /* todo centrado */
+  text-align: center;
+  margin: 10px;
+}
+
+.card-menu img {
+  max-width: 150px; /* ajustá según tu diseño */
+  height: auto;
+  display: block;
+}
+
+.card-menu h2 {
+  margin-top: 8px;
+  font-size: 1.2rem;
+  color: white; /* o el color que quieras */
+}
+
 
