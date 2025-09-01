@@ -1,0 +1,17 @@
+// _store.scss
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap-lg;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: $gap-lg;
+
+  h2 {
+    flex-basis: 100%;
+    text-align: left;
+    color: $color-chartreuse;
+    margin-bottom: $gap-md;
+  }
+}

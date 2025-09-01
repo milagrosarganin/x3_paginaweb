@@ -1,0 +1,14 @@
+.form-container{
+  max-width:600px; margin:$gap-lg auto; padding:$gap-lg; background:$color-bg-form; @include rounded($radius-md);
+}
+.form-group{ margin-bottom:1.5rem;
+  label{ display:block; margin-bottom:.5rem; color:$color-beige; }
+  input{
+    width:100%; padding:.75rem; border:1px solid $color-borde-form;
+    background:#333; color:white; @include rounded($radius-sm);
+  }
+}
+.form-btn{
+  background:$color-chartreuse; color:black; border:none; padding:.75rem 1.5rem;
+  @include rounded($radius-sm); cursor:pointer; font-weight:bold; text-align:center; display:block; width:100%;
+}

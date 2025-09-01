@@ -1,0 +1,20 @@
+body{
+  background-color: $color-negro;
+  background-image: url(../multimedia/imagenes/fondo2.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: $font-base;
+}
+
+h1{
+  text-align:center; font-size:2rem; color: rgb(138, 255, 20);
+}
+
+.titulos{
+  h2{
+    width:300px; padding:10px; @include rounded($radius-md);
+    color:$color-negro; font-size:2rem; background:#fefefe; text-align:center; margin:2rem auto;
+    @extend .anim-fade-in;
+  }
+}

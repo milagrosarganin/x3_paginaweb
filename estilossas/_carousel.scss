@@ -1,0 +1,48 @@
+.novedades-noticias{
+  text-align:center;
+  img{ width:150px; height:auto; }
+}
+
+.carousel-item{
+  img, video{ max-height:600px; object-fit:cover; transition: transform $dur-slow $ease-in-out; }
+  &:hover img{ transform: scale(1.02); }
+}
+
+.video-carousel-wrapper{ max-width:500px; margin-left:auto; margin-right:auto; }
+
+.carousel-fixed-height{
+  height:500px; @include rounded($radius-lg); overflow:hidden; background:#111; margin-bottom:$gap-lg;
+
+  .carousel-item{ height:100%;
+    img{ width:100%; height:100%; object-fit:contain; }
+  }
+}
+/* Centrar el carrusel y limitar el ancho máximo */
+#torneosCarousel{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Alto fijo y recorte suave (evita que las fotos gigantes rompan el layout) */
+.carousel-fixed-height {
+  height: 60vh;              // ~60% del alto de la ventana
+  border-radius: $radius-lg; // usa tu variable
+  overflow: hidden;
+  background-color: #111;    // “letterbox” oscuro
+  margin-bottom: $gap-lg;
+
+  .carousel-item { height: 100%; }
+
+  .carousel-item img,
+  .carousel-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       // recorta sin deformar (rellena)
+  }
+}
+
+/* En mobile, bajamos un poco el alto */
+@include mq($bp-mobile){
+  .carousel-fixed-height{ height: 45vh; }
+}

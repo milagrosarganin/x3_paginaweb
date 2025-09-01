@@ -1,0 +1,21 @@
+.botones_con_logo{
+  text-align:center; display:flex; background-size:contain; gap:30px;
+  background-position:center; justify-content:space-evenly; flex-wrap:wrap;
+  height:min-content; text-decoration:none;
+}
+
+.logo-link{
+  @extend %btn-base;
+  display:flex; flex-direction:column; align-items:center; width:200px;
+  @extend .hover-grow;
+
+  img{ width:150px; height:150px; @include rounded(50%); object-fit:cover; display:block; }
+  h2{ margin-top:1rem; font-size:1.2rem; color:white; text-shadow:2px 2px 4px rgba(0,0,0,.7); }
+}
+
+.btn-revivi{
+  @extend %btn-base;
+  display:block; width:fit-content; margin:2rem auto; padding:.75rem 2rem;
+  background:$color-chartreuse; color:black;
+  &:hover{ transform:scale(1.05); box-shadow:0 4px 15px rgba(127,255,0,.4); }
+}

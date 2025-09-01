@@ -1,0 +1,13 @@
+// Media query rápida
+@mixin mq($max) { @media (max-width: $max) { @content; } }
+
+// Flex helpers
+@mixin flex-between($gap:$gap-md){ display:flex; justify-content:space-between; gap:$gap; }
+@mixin flex-end($gap:$gap-md){ display:flex; justify-content:flex-end; gap:$gap; }
+
+// Bordes y sombra
+@mixin rounded($r:$radius-md){ border-radius:$r; }
+@mixin card-shadow { box-shadow: 0 4px 8px rgba(0,0,0,.1); }
+
+// Transiciones genéricas
+@mixin smooth { transition: all $dur $ease-out; }

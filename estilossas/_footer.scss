@@ -1,0 +1,10 @@
+.pie-pag{
+  @include flex-between($gap-lg);
+  background:$color-negro; color:$color-footer; padding:$gap-lg; flex-wrap:wrap;
+
+  p{ color:$color-beige; }
+
+  .mapa{
+    display:flex; @include rounded($radius-md); font-size:20px; width:50%; height:200px; border:0;
+  }
+}

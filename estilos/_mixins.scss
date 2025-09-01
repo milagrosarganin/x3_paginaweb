@@ -1,9 +1,0 @@
-// _mixins.scss
-
-// Mixin para centrar contenido con Flexbox
-@mixin flex-center($direction: row) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: $direction;
-}

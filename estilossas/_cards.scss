@@ -1,0 +1,23 @@
+.product-grid{
+  display:flex; flex-wrap:wrap; gap:$gap-lg; justify-content:space-evenly;
+  text-align:center; padding:$gap-lg;
+
+  h2{ flex-basis:100%; text-align:left; color:$color-chartreuse; margin-bottom:$gap-md; }
+}
+
+.card{
+  @extend %card-base;
+  // 4 por fila en desktop
+  flex-basis: calc(25% - #{$gap-lg}); max-width: calc(25% - #{$gap-lg});
+  @extend .anim-fade-in;
+
+  img{ width:100%; height:auto; border-top-left-radius:$radius-md; border-top-right-radius:$radius-md; }
+  &-body{ padding:1rem; color:$color-texto-card; }
+}
+
+@include mq($bp-tablet){
+  .card{ flex-basis: calc(50% - #{$gap-lg}); max-width: calc(50% - #{$gap-lg}); }
+}
+@include mq($bp-mobile){
+  .card{ flex-basis:100%; max-width:100%; }
+}

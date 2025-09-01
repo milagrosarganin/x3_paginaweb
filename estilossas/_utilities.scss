@@ -1,0 +1,21 @@
+// Placeholders para @extend (demuestra manejo de extend)
+%card-base {
+  background:#fff; border:1px solid #ddd;
+  @include rounded($radius-md); @include card-shadow;
+  display:flex; flex-direction:column;
+}
+%btn-base {
+  display:inline-block; font-weight:700; text-decoration:none; cursor:pointer;
+  @include rounded($radius-md); @include smooth;
+}
+
+// Generación dinámica de helpers (demuestra @each y operadores)
+$gaps: (sm: $gap-sm, md: $gap-md, lg: $gap-lg);
+@each $name, $val in $gaps {
+  .gap-#{$name} { gap: $val; }
+}
+
+$radius-map: (sm:$radius-sm, md:$radius-md, lg:$radius-lg);
+@each $n,$r in $radius-map {
+  .rounded-#{$n} { border-radius: $r; }
+}
