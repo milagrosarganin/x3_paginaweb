@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://milagrosarganin.github.io/x3_paginaweb/sitemap.xml
