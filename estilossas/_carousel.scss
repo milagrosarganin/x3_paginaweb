@@ -46,3 +46,8 @@
 @include mq($bp-mobile){
   .carousel-fixed-height{ height: 45vh; }
 }
+
+// Estilo específico para la galería de torneos
+.torneos-galeria .carousel-item img {
+  object-fit: contain; // Muestra la imagen completa sin recortar
+}

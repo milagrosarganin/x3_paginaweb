@@ -12,3 +12,8 @@
   background:$color-chartreuse; color:black; border:none; padding:.75rem 1.5rem;
   @include rounded($radius-sm); cursor:pointer; font-weight:bold; text-align:center; display:block; width:100%;
 }
+
+.register-link-wrapper {
+  text-align: center;
+  color: $color-blanco;
+}
